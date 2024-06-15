@@ -1,0 +1,13 @@
+graft src/zelos
+
+include src/crashd/dwarf/template.html
+include src/crashd/dwarf/new-formatted-file.html
+include src/crashd/bf_models/null_template.txt
+include src/crashd/bf_models/overflow_template.txt
+
+
+include LICENSE *.md *.toml *.yml *.yaml *.ini .flake8
+
+# Ignore
+global-exclude *.py[co]
+global-exclude __pycache__

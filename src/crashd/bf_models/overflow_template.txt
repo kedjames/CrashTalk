@@ -1,0 +1,40 @@
+<p>
+   In <span id="severity_evaluator_program" style="color:blue;font-weight:bold">@severity_evaluator_program@</span>, 
+   <span style="color:orange;">@data_verification.cause@</span> to 
+   <span style="color:orange;">@data_verification.operation@</span> 
+   <span style="color:orange;">@data_verification.mechanism@</span> 
+   <span style="color:blue;">@data_verification.source_var@</span> in 
+   <span style="color:blue;">@data_verification.source_code@</span> 
+   <span id="dvr_code_base" title="@dvr_code_base@" style="color:blue;" onclick="show_the_line('dvr_code_base')">@data_verification.source_site@</span>
+   results in a <span style="color:red;">@data_verification.consequence@</span> 
+   of (<span id="mem_use_total_mem_accessed">@mem_use.total_mem_accessed@</span>) bytes.
+   Subsequently, the <span style="color:orange;">@mem_addressing.cause@</span> 
+   (<span id="mem_use_total_mem_accessed_2">@mem_use.total_mem_accessed@</span>) derived from 
+   <span style="color:blue;">@data_verification.source_var@</span> was used to perform a 
+   <span style="color:blue;">@mem_addressing.mechanism@</span> 
+   <span style="color:blue;">@mem_addressing.operation@</span> of pointer 
+   <span style="color:blue;">@mem_addressing.sink_var@</span> in 
+   <span style="color:blue;">@mem_addressing.source_code@</span> 
+   <span style="color:blue;">@mem_addressing.sink_site@</span>, which resulted in an 
+   <span style="color:red;">@mem_addressing.consequence@</span>.
+   Finally, using the <span style="color:orange;">@mem_addressing.consequence@</span> 
+   <span style="color:blue;">@mem_use.sink_var@</span> 
+   to perform a <span style="color:blue;">@mem_use.mechanism@</span> 
+   <span style="color:blue;">@mem_use.operation@</span> of 
+   <span style="color:blue;">@mem_use.address_kind@</span> 
+   data [<span style="color:blue;">@mem_use.total_mem_accessed@</span>] bytes 
+   @direction@ <span style="color:blue;">@mem_use.address_state@</span> object of size 
+   <span id="mem_use_alloc_size">@mem_use.alloc_size@</span> in 
+   <span style="color:blue;">@mem_use.source_code@</span> 
+   <span id="mus_code_base" title="@mus_code_base@" style="color:blue;" onclick="show_the_line('mus_code_base')">@mem_use.sink_site@</span> results in a final 
+   <span style="color:red;">@mem_use.consequence@</span> Memory Error. This may lead to
+   <span style="color:red;">data tampering, code execution, or denial of service</span>.
+   <br><br>
+   <span style="color:black;">@weakness_1@</span>
+   <br>
+   <span style="color:black;">@weakness_2@</span>
+   <br><br>
+   <span style="color:black;">CVSS V3 Severity:</span>
+   <span style="color:black;">@severity@</span>
+   <br><br>
+</p>

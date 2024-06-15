@@ -1,0 +1,19 @@
+<p>
+  In @severity_evaluator.program@, <span style="color: orange;">@mem_addressing.cause@</span> for an 
+  <span style="color: orange;">@mem_addressing.operation@</span> operation to valid memory at 
+  (<span id="mad_code_base" title="@mad_code_base@" style="color:blue;" onclick="show_the_line('mad_code_base')">@mem_addressing.source_site@</span>) due to expression 
+  (<span style="color: blue;">@mem_addressing.source_expr@</span>) leads to a 
+  <span style="color: red;">@mem_addressing.consequence@</span>. The 
+  <span style="color: orange;">@mem_use.cause@</span> was dereferenced via a 
+  <span style="color: blue;">@mem_use.mechanism@</span> 
+  <span style="color: blue;">@mem_use.operation@</span> operation at 
+  (<span id="mus_code_base" title="@mus_code_base@" style="color:blue;" onclick="show_the_line('mus_code_base')">@mem_use.sink_site@</span>), which resulted in a 
+  <span style="color: red;">@mem_use.consequence@</span> Memory Error. This may lead to 
+  <span style="color: red;">@impact_str@</span>.
+  <br><br>
+  <span style="color:black;">@weakness_1@</span>
+  <br><br>
+  <span style="color:black;">CVSS V3 Severity:</span>
+  <span style="color:black;">@severity@</span>
+  <br><br>
+</p>
