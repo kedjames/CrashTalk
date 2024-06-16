@@ -68,4 +68,4 @@ CrashTalk utilizes the [Zelos](https://github.com/zeropointdynamics/zelos) emula
 ## Development Details
 - **Operating System**: Ubuntu 18.04.6 LTS
 - **Architecture**: x86-64
-- **Python**: Python 3.6.9
+- **Python**: 3.6.9
